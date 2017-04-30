@@ -1,0 +1,67 @@
+<html>
+<head>
+    <script src="js/system/jquery.min.js"></script>
+    <script src="js/system/jquery-ui.js"></script>
+    <link rel="stylesheet" href="css/jquery-ui/ui/1.12.1/themes/smoothness/jquery-ui.css">
+    <script src="js/script.js"></script>
+    <script>
+    </script>
+
+    <meta charset="UTF-8">
+    <title>test Work</title>
+</head>
+<body>
+<p>Информация о книгах</p>
+<input id="add_btn" type="button" value="Добавить"/>
+<div id="book_list_info">
+</div>
+
+<div id="dialog_add_form" title="Создание книги" style="display: none">
+    <form>
+        <fieldset>
+            <div style="padding-bottom:10px;display:grid">
+                <label for="add_form_book_name">Название</label>
+                <input type="name" id="add_form_book_name">
+            </div>
+            <div style="padding-bottom:10px;display:grid">
+                <label for="add_form_book_author">Автор</label>
+                <input type="text" id="add_form_book_author">
+            </div>
+            <div style="padding-bottom:10px;display:grid">
+                <label for="add_form_book_catalog">Каталог</label>
+                <div>Открытый: <input type="checkbox" id="add_form_book_catalog"></div>
+            </div>
+            <div style="display:grid">
+                <label for="add_form_book_calendar">Дата выпуска</label>
+                <div id="add_form_book_calendar"></div>
+            </div>
+            <input type="submit" tabindex="-1" style="position:absolute; top:-1000px">
+        </fieldset>
+    </form>
+</div>
+
+<div id="dialog_edit_form" title="Редактирование книги" style="display: none">
+    <form>
+        <fieldset>
+            <div style="padding-bottom:10px;display:grid">
+                <label for="edit_form_book_name">Название</label>
+                <input type="name" name="name" id="edit_form_book_name">
+            </div>
+            <div style="padding-bottom:10px;display:grid">
+                <label for="edit_form_book_author">Автор</label>
+                <input type="text" name="author" id="edit_form_book_author">
+            </div>
+            <div style="padding-bottom:10px;display:grid">
+                <label for="edit_form_book_catalog">Каталог</label>
+                <div>Открытый: <input type="checkbox" id="edit_form_book_catalog"></div>
+            </div>
+            <div style="display:grid">
+                <label for="edit_form_book_calendar">Дата выпуска</label>
+                <div id="edit_form_book_calendar"></div>
+            </div>
+            <input type="submit" tabindex="-1" style="position:absolute; top:-1000px">
+        </fieldset>
+    </form>
+</div>
+</body>
+</html>
